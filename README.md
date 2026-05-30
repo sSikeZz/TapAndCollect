@@ -22,14 +22,5 @@ For performance, collection particles are pooled, the falling objects are simple
 
 I used AI lightly as a support tool while working on the project. Mainly, it helped me review the code structure, think through a few game-feel ideas, and clean up parts of this README. The actual implementation stayed within the existing Unity setup and project structure.
 
-Areas where AI was used for support:
-
-- `Assets/Scripts/Gameplay/Basket.cs`
-- `Assets/Scripts/Gameplay/FallingObject.cs`
-- `Assets/Scripts/Gameplay/FallingObjectSpawner.cs`
-- `Assets/Scripts/Gameplay/GameManager.cs`
-- `Assets/Scripts/Data/GameSettings.cs`
-- `Assets/Scripts/Feedback/GameFeedbackController.cs`
-- `Assets/Scripts/UI/HudView.cs`
 
 
