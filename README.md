@@ -18,7 +18,7 @@ Unity 6000.3.10f1
 2. Open Unity Hub.
 3. Click "Add Project" and select the project folder.
 4. Open the project using Unity 6000.3.10f1.
-5. Open the Main scene located in Assets/Scenes.
+5. Open the main scene located in `Assets/Scenes`.
 6. Press Play in the Unity Editor or create a WebGL build using the Build Settings window.
 
 ---
@@ -29,25 +29,21 @@ The project is divided into separate gameplay systems to keep responsibilities i
 
 ### Core Systems
 
-* GameManager
-
+* `GameManager`
   * Controls score, lives, timer, difficulty progression, bonuses, and game state.
 
-* FallingObjectSpawner
-
+* `FallingObjectSpawner`
   * Handles weighted spawning of collectibles, hazards, and bonus items.
 
-* FallingObject
-
+* `FallingObject`
   * Controls falling behaviour, collisions, effects, and despawning.
 
-* Basket
-
+* `Basket`
   * Handles player input, movement, collection feedback, and animations.
 
 ### Data
 
-ScriptableObjects are used for item configuration, allowing designers to modify gameplay values without changing code.
+ScriptableObjects are used for item configuration, allowing gameplay values to be modified without changing code.
 
 ### Prefabs
 
@@ -61,13 +57,13 @@ The project uses reusable prefabs and prefab variants to avoid duplication and s
 
 Used in:
 
-* GameManager
+* `GameManager`
 
 Reason:
 
 The game requires a single central authority for score, lives, timer, difficulty progression, and overall game state. Using a Singleton provides easy access while preventing multiple instances.
 
-### Observer Pattern (Event-Based Communication)
+### Observer Pattern
 
 Used in:
 
@@ -75,6 +71,7 @@ Used in:
 * Score updates
 * Life updates
 * Timer updates
+* Collection feedback
 
 Reason:
 
@@ -101,30 +98,12 @@ Several gameplay feedback systems were added to improve responsiveness and playe
 * Falling item wobble motion
 * Spawn pop animations
 * Camera shake
-* Screen flash feedback
+* Screen flashes
 * Particle effects
-* Pitch-varied audio effects
 * Animated score and life UI
-* Delayed game-over transition
+* Delayed game-over reveal
 
 These additions were designed to create a more polished and satisfying gameplay experience without significantly increasing complexity.
-
----
-
-## Performance Considerations
-
-The game was designed with WebGL deployment in mind.
-
-Optimizations include:
-
-* Pooled particle effects
-* Lightweight 2D trigger collisions
-* Minimal runtime allocations
-* Simple sprite-based visuals
-* Efficient spawning system
-* Inspector-driven configuration through ScriptableObjects
-
-The goal was to maintain smooth gameplay while keeping build size and loading times reasonable for browser-based play.
 
 ---
 
@@ -150,7 +129,6 @@ If given additional development time, I would consider adding:
 * Additional item behaviours
 * More bonus power-ups
 * Achievement and progression systems
-* Audio settings persistence
 * High score saving
 * Additional visual effects and animations
 * Mobile-specific polish and balancing
@@ -168,4 +146,4 @@ Usage included:
 * Verifying implementation approaches
 * Refining documentation
 
-All gameplay systems, architecture decisions, implementation, integration, testing, and project setup were completed and validated within Unity as part of the development process.
+All gameplay systems, project setup, integration, and final testing were handled within Unity during development.
