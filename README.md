@@ -146,4 +146,3 @@ Usage included:
 * Verifying implementation approaches
 * Refining documentation
 
-All gameplay systems, project setup, integration, and final testing were handled within Unity during development.
