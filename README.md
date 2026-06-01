@@ -10,6 +10,9 @@ Tap And Collect is a casual 2D Unity WebGL game where the player controls a bask
 
 Unity 6000.3.10f1
 
+14.1mb uncomppressed
+13.9mb compressed rar file
+
 ---
 
 ## Opening The Project
